@@ -1,0 +1,3 @@
+# replace substring in a file
+sed -e 's/-e none //g'
+
