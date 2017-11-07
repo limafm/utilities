@@ -32,7 +32,7 @@ class RedisHandler:
   # COMBOS #
   ##########
 
-  # Remove all keys matchin pattern (keys + del)
+  # Remove all keys matching pattern (keys + del)
   def remove_all_match_keys(self, term):
     keys = self.keys(term)
 
