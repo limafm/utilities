@@ -40,9 +40,14 @@ class RedisHandler:
       print 'Removing %s...' % key
       self.delete(key)
 
+  # Beauty keys print :P
+  def print_keys(self, term):
+    for key in self.keys(term):
+      print key
 
-# if __name__ == '__main__':
-#   my_redis = RedisHandler()
+
+if __name__ == '__main__':
+  my_redis = RedisHandler()
 
 #   my_redis.set('12345', 'test11')
 #   my_redis.set('12346', 'test11')
@@ -50,6 +55,6 @@ class RedisHandler:
 #   my_redis.set('12348', 'test11')
 #   my_redis.set('12349', 'test11')
 
-#   my_redis.remove_all_match_keys('*123*')
+  print my_redis.print_keys('*boticario*')
+  # my_redis.remove_all_match_keys('*123*')
 
-#   print my_redis.keys('*123*')
