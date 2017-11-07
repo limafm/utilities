@@ -55,6 +55,6 @@ if __name__ == '__main__':
 #   my_redis.set('12348', 'test11')
 #   my_redis.set('12349', 'test11')
 
-  print my_redis.print_keys('*boticario*')
+  print my_redis.print_keys('*123*')
   # my_redis.remove_all_match_keys('*123*')
 
