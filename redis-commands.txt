@@ -1,0 +1,2 @@
+# Delete multiple keys in redis using a pattern
+redis-cli --scan --pattern 'user:*' | xargs redis-cli del
